@@ -1,10 +1,15 @@
-import './App.css'
-import Sidebar from './components/Sidebar'
+import './App.css';
+import Landing from './components/Landing';
+import Sidebar from './components/Sidebar';
+
 
 function App() {
 
-  return(
-    <Sidebar />
+  return (
+    <>
+      <Sidebar />
+      <Landing />
+    </>
   )
 
 }

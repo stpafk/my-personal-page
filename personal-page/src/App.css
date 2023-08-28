@@ -114,3 +114,20 @@ ul li a .txt-click {
     }
 
 }
+
+section.landing__page {
+    margin-left: 10%
+}
+
+section.landing__page .name__heading {
+    font-size: 48px;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    flex-direction: row;
+}
+
+section.landing__page .name__heading > :last-child {
+    font-style: italic;
+
+}
