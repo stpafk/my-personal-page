@@ -1,11 +1,25 @@
 
 export default function Sidebar() {
 
+    function toggleSidebar(e) {
+
+
+        if (e.target.id === "") {
+            e.target.id = "clicked";
+            document.querySelector("nav").style.width = "30%";
+            return;
+        }
+
+        e.target.id = "";
+        document.querySelector("nav").style.width = ""
+
+    }
 
     return(
         <nav>
             <div className="header__img">
-                <i className="bi bi-menu-button-wide"></i>
+                <i className="bi bi-menu-button-wide"
+                 onClick={toggleSidebar}></i>
             </div>
             <ul>
                 <li className="sidebar__li">

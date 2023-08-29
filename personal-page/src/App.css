@@ -36,16 +36,16 @@ nav {
 @media (max-width:412px) {
     
     nav {
-        width: 15%;
+        width: 10%;
     }
 
-    nav:active {
+    nav#clicked {
         width: 30%;
     }
 
 }
 
-nav:hover, nav:active {
+nav:hover {
     width: 15%;
 }
 
@@ -101,16 +101,17 @@ ul li a .txt-click {
     
     nav .header__img {
         margin-bottom: 100px;
-        padding-left: 10px;
+        padding-left: 5px;
     }
 
     ul li a {
         padding: 25px 4%;
+        font-size: 16px;
     }
 
     ul li a .icon {
-        font-size: 24px;
-        margin-left: 10px;
+        font-size: 16px;
+        margin-left: 5px;
     }
 
 }
@@ -130,4 +131,8 @@ section.landing__page .name__heading {
 section.landing__page .name__heading > :last-child {
     font-style: italic;
 
+}
+
+img {
+    display: none;
 }

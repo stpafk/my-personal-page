@@ -1,3 +1,4 @@
+import img from '../assets/S.jpg'
 
 export default function Landing() {
 
@@ -16,7 +17,7 @@ export default function Landing() {
                     maintainable application. Hover by to see some of my knowledges and
                     education!
                 </p>
-                <img src="" alt="Stephan's Img" />
+                <img src={img} alt="Stephan's Img" />
             </article>
         </section>
     )
