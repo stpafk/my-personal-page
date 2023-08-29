@@ -20,8 +20,8 @@ export default function Landing() {
 
                     <h1>Goals</h1>
                     <p className="presentation__goals">
-                        As an aspiring Junior Developer, my goals are to not only to build easy-to-use, accessible and
-                        maintanable applications, but also, to create a communicative and assertive work environment.
+                        As an aspiring Junior Developer, my goals are not only building easy-to-use, accessible and
+                        maintanable applications, but also creating a communicative and assertive work environment.
                     </p>
 
                     <label htmlFor="checkout__tech">Check my technologies!</label>

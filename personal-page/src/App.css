@@ -140,12 +140,14 @@ section.landing__page .name__heading > :last-child {
     text-shadow: 2px 0px 15px var(--shadow-red);
 }
 
+/*
 .bar {
     margin: 10px 5%;
     height: 1px;
     background: var(--shadow-red);
     box-shadow: 4px 4px 15px var(--red);
 }
+*/
 
 article {
     position: relative;
@@ -158,12 +160,43 @@ article {
 
 article > .presentation__info {
     max-width: 50%;
+    display: flex;
+    flex-direction: column;
+    padding: 10% 0;
 
     z-index: 2;
 }
 
+article .presentation__info h1 {
+    margin: 15px 0;
+    color: rgb(255, 3, 3);
+    font-style: italic;
+}
 
-img {
+article .presentation__info > label {
+    font-style: italic;
+    margin: 15px 0;
+}
+
+article > .presentation__info label, p {
+    font-weight: 800;
+}
+
+article .presentation__info > input {
+    cursor: pointer;
+    max-width: 150px;
+    margin-left: 20%;
+    background: transparent;
+    font-family: 'Outfit', sans-serif;
+
+    color:var(--red);
+    padding: 5px 10px;
+    border-radius: 10px;
+    border: 2px solid var(--shadow-red);
+    box-shadow: 4px 0 10px var(--red);
+}
+
+article > img {
     position: absolute;
     top: 0;
     left: 40%;
@@ -178,4 +211,23 @@ img {
         flex-direction: column;
         font-size: 22px;
     }
+
+    article > .presentation__info {
+        max-width: 70%;
+    }
+
+    article .presentation__info > p {
+        font-size: 14px;
+    }
+
+    article .presentation__info > h1, label {
+        font-size: 18px;
+    } 
+
+    article > img {
+        top: 30%;
+        max-height: 200px;
+    }
+
+
 }
