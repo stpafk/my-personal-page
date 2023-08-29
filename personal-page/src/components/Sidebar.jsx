@@ -6,12 +6,12 @@ export default function Sidebar() {
 
         if (e.target.id === "") {
             e.target.id = "clicked";
-            document.querySelector("nav").style.width = "30%";
+            document.querySelector("nav").id = "clicked";
             return;
         }
 
         e.target.id = "";
-        document.querySelector("nav").style.width = ""
+        document.querySelector("nav").id = ""
 
     }
 

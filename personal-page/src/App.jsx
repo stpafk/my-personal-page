@@ -1,6 +1,7 @@
 import './App.css';
 import Landing from './components/Landing';
 import Sidebar from './components/Sidebar';
+import Technology from './components/Technology';
 
 
 function App() {
@@ -9,6 +10,7 @@ function App() {
     <>
       <Sidebar />
       <Landing />
+      <Technology />
     </>
   )
 
