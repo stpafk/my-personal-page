@@ -4,6 +4,9 @@ export default function Landing() {
 
     return(
         <section className="landing__page">
+            <div className="redCrossBar"></div>
+            <div className="redCrossBar second"></div>
+            <div className="redCrossBar third"></div>
             <div className="name__heading">
                 <h1>Stephan Allek</h1>
                 <h1>Web Dev</h1>
