@@ -1,3 +1,5 @@
+import techs from "../helpers/tech"
+
 
 export default function Technology() {
 
@@ -9,7 +11,13 @@ export default function Technology() {
                         <h3>Here are the technologies which I have some experience on.</h3>
                     </div>
                     <div className="tech__box">
-                        
+                        <ul className="tech__ul">
+                            {techs.map((item) => (
+                                <li className="grid_tech">
+                                    <i className={item.i}></i>
+                                </li>
+                            ))}
+                        </ul>
                     </div>
                     
             </section>
