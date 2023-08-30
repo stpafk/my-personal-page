@@ -331,5 +331,14 @@ section.technology__section .tech__header > h3 {
 
 section.technology__section .tech__box {
     background-color: var(--white);
-    margin: 10% 5%;
+    margin: 10% 5%;    
+}
+
+.tech__box > ul {
+    list-style-type: none;
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: 1fr;
+
+    padding: 5% 10%;
 }
