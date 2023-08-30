@@ -65,16 +65,16 @@ nav .header__img > i{
     cursor: pointer;
 }
 
-ul {
+ul.sidebar {
     height: 100%;
     list-style-type: none;
 }
 
-ul li {
+ul.sidebar li {
     transition: .2s;
 }
 
-ul li a {
+ul.sidebar li a {
     color: var(--white);
     text-decoration: none;
     font-size: 20px;
@@ -84,19 +84,19 @@ ul li a {
     margin-bottom: 20px;
 }
 
-ul li:hover {
+ul.sidebar li:hover {
     border-radius: 10px;
     box-shadow: 2px 2px 5px rgb(98, 0, 0);
     transition: .3s;
     background-color: rgb(98, 0, 0)
 }
 
-ul li a .icon {
+ul.sidebar li a .icon {
     font-size: 24px;
     margin-left: 10px;
 }
 
-ul li a .txt-click {
+ul.sidebar li a .txt-click {
     margin-left: 35px;
 }
 
@@ -326,6 +326,7 @@ section.technology__section .tech__header {
 
 section.technology__section .tech__header > h3 {
     font-size: 22px;
+    font-style: italic;
 }
 
 section.technology__section .tech__box {

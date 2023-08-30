@@ -21,7 +21,7 @@ export default function Sidebar() {
                 <i className="bi bi-menu-button-wide"
                  onClick={toggleSidebar}></i>
             </div>
-            <ul>
+            <ul className="sidebar">
                 <li className="sidebar__li">
                     <a href="#">
                         <span className="icon"><i className="bi bi-house"></i></span>
