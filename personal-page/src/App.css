@@ -137,6 +137,10 @@ section.landing__page .name__heading {
 
 }
 
+section.landing__page .name__heading > h1 {
+    z-index: 1;
+}
+
 section.landing__page .name__heading > :last-child {
     margin-left: 2%;
     font-style: italic;
@@ -163,18 +167,19 @@ article {
 
 @keyframes gradient {
     0% {
-        background-position: 0% 50%;
+        background: var(--shadow-pink);
         box-shadow: 4px 5px 50px rgb(245, 32, 160); 
         
     }
 
     50% {
-		background-position: 100% 50%;
-        box-shadow: 4px 5px 50px var(--shadow-red); 
+		background: var(--shadow-red);
+        box-shadow: 4px 5px 50px var(--red); 
 	}
+
 	100% {
-		background-position: 0% 50%;
-        box-shadow: 4px 5px 50px #fd5d00; 
+		background: #fd5d00;
+        box-shadow: 4px 5px 50px #fd5d00;
 	}
 }
 
@@ -185,11 +190,10 @@ section > .redCrossBar {
     top: 20%;
     left: 60%;
     /**/
-    animation: gradient 15s ease infinite;
+    animation: gradient 10s ease infinite;
     height: 2px;
     width: 600px;
     background: linear-gradient(-45deg, var(--shadow-red), var(--shadow-pink), #fd5d00);
-	background-size: 400% 400%;
     border-radius: 50%;
     box-shadow: 4px 5px 50px rgb(245, 32, 160); 
 }
