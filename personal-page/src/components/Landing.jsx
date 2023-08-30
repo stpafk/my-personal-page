@@ -24,7 +24,7 @@ export default function Landing() {
                         maintanable applications, but also creating a communicative and assertive work environment.
                     </p>
 
-                    <label htmlFor="checkout__tech">Check my technologies!</label>
+                    <label htmlFor="checkout__tech">Check my experiences with tech!</label>
                     <input type="button" value="Check Technologies" />
 
                     

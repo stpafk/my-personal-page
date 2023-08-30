@@ -48,7 +48,7 @@ nav {
 }
 
 nav:hover {
-    width: 15%;
+    width: 18%;
 }
 
 nav .header__img {
@@ -153,7 +153,7 @@ article {
     position: relative;
     display: flex;
     margin-top: 5%;
-    padding: 0 15%;
+    padding: 0 10%;
 
     z-index: 1;
 }
@@ -169,7 +169,8 @@ article > .presentation__info {
 
 article .presentation__info h1 {
     margin: 15px 0;
-    color: rgb(255, 3, 3);
+    color: var(--red);
+    text-shadow: 4px 0 10px var(--red);
     font-style: italic;
 }
 
@@ -196,11 +197,19 @@ article .presentation__info > input {
     box-shadow: 4px 0 10px var(--red);
 }
 
+article .presentation__info > input:hover {
+    transition: .5s ease-in;
+    background: var(--red);
+    color: var(--white);
+}
+
 article > img {
     position: absolute;
-    top: 0;
+    top: 0%;
     left: 40%;
     max-width: 500px;
+    box-shadow: 4px 0 10px var(--shadow-red);
+    border-radius: 50%  ;
 
     z-index: 1;
 }
@@ -225,8 +234,9 @@ article > img {
     } 
 
     article > img {
-        top: 30%;
-        max-height: 200px;
+        top: 15%;
+        left: 37%;
+        max-height: 250px;
     }
 
 
