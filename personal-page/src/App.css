@@ -367,6 +367,10 @@ li.grid_tech > p {
 
 @media (max-width: 412px) {
 
+    .tech__box > ul {
+        padding: 2% 6%;
+    }
+
     section.technology__section .tech__header {
         font-size: 22px;
         text-align: center;
