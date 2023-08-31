@@ -265,7 +265,22 @@ section.technology__section .tech__box {
 
     color: rgb(79, 70, 70);
     font-family: "Orbitron", sans-serif;
+}
 
+.tech__box ul > li.grid_tech:before {
+    content: "";
+    display: block;
+    height: 5px;
+    width: 0%;
+    background: rgba(79, 70, 70, 0.477);
+
+    position: absolute;
+    top: 0;
+    transition: all ease-in-out 250ms;
+}
+
+.tech__box ul > li.grid_tech:hover:before {
+    width: 100%;
 }
 
 li.grid_tech > i {
@@ -282,6 +297,7 @@ li.grid_tech > h3 {
 li.grid_tech > p {
     font-size: 14px;
 }
+
 
 @media (max-width:412px) {
     
