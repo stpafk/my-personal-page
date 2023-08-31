@@ -4,7 +4,8 @@ import techs from "../helpers/tech"
 export default function Technology() {
 
     function throwPopUp(e) {
-        
+        let filteredTech = techs.filter((t) => t.name === e.target.id);
+
     }
 
     return(
@@ -21,8 +22,7 @@ export default function Technology() {
                                     <i className={item.i}></i>
                                     <h3 className="tech__name">{item.name}</h3>
                                     <p className="tech__exp"><span
-                                    className="span__msg" id={item.name}
-                                    onMouseOver={(e) => throwPopUp(e)}>{item.exp}</span>/5</p>
+                                    className="span__msg" id={item.name}>{item.exp}</span>/5</p>
                                 </li>
                             ))}
                         </ul>
