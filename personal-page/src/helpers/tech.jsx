@@ -9,6 +9,18 @@ const techs = [
     },
 
     {
+        name: "CSS3",
+        i: "devicon-css3-plain colored",
+        exp: "5"
+    },
+
+    {
+        name: "HTML5",
+        i: "devicon-html5-plain colored",
+        exp: "5"
+    },
+
+    {
         name: "TypeScript",
         i: "devicon-typescript-plain colored",
         exp: "3",
@@ -27,15 +39,9 @@ const techs = [
     },
 
     {
-        name: "CSS3",
-        i: "devicon-css3-plain colored",
-        exp: "5"
-    },
-
-    {
-        name: "HTML5",
-        i: "devicon-html5-plain colored",
-        exp: "5"
+        name: "Jest",
+        i: "devicon-jest-plain colored",
+        exp: "4"
     },
 
     {
@@ -50,6 +56,41 @@ const techs = [
         exp: "5",
     },
 
+    {
+        name:"Django",
+        i: "devicon-django-plain colored",
+        exp: "3",
+    },
+
+    {
+        name: "Flask",
+        i: "devicon-flask-original colored",
+        exp: "4",
+    },
+
+    {
+        name: "MySQL",
+        i: "devicon-mysql-plain colored",
+        exp: "3",
+    },
+
+    {
+        name: "MongoDB",
+        i: "devicon-mongodb-plain colored",
+        exp: "2",
+    },
+
+    {
+        name: "NodeJS",
+        i: "devicon-nodejs-plain colored",
+        exp: "4",
+    },
+
+    {
+        name: "Java",
+        i: "devicon-java-plain colored",
+        exp: "2",
+    },
 
 ]
 
