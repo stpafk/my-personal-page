@@ -298,6 +298,47 @@ li.grid_tech > p {
     font-size: 14px;
 }
 
+section.project__section {
+    min-height: 100vh;
+    margin: 10% 0 10% 10%;
+    display: flex;
+    justify-content: center;
+}
+
+section.project__section > .project__wrapper {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+}
+
+.project__wrapper > .wrapper {
+    background: white;
+    height: 500px;
+    width: 500px;
+    border-radius: 50%;
+    margin: 2rem;
+
+    position: absolute;
+    box-shadow: 4px 0 50px var(--shadow-pink);
+}
+
+.project__wrapper > .wrapper.first {
+    top: 0%;
+    right: 10%;
+
+    z-index: 3;
+}
+
+.project__wrapper > .wrapper.sec {
+    top: 30%;
+    margin-left: 20%;
+}
+
+.project__wrapper > .wrapper.third {
+    top: 60%;
+    right: 45%;
+    z-index: 1;
+}
 
 @media (max-width:412px) {
     
