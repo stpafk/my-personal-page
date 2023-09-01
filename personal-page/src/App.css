@@ -303,12 +303,7 @@ section.project__section {
     margin: 10% 0 10% 10%;
     display: flex;
     justify-content: center;
-}
-
-section.project__section > .project__wrapper {
-    display: flex;
     position: relative;
-    flex-direction: column;
 }
 
 .project__wrapper > .wrapper {
@@ -324,19 +319,20 @@ section.project__section > .project__wrapper {
 
 .project__wrapper > .wrapper.first {
     top: 0%;
-    right: 10%;
-
+    left: 10%;
+    
     z-index: 3;
 }
 
 .project__wrapper > .wrapper.sec {
     top: 30%;
-    margin-left: 20%;
+    left: 43%;
+    z-index: 2;
 }
 
 .project__wrapper > .wrapper.third {
-    top: 60%;
-    right: 45%;
+    top: 70%;
+    left: 10%;
     z-index: 1;
 }
 
