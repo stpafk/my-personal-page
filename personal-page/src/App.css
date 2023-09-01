@@ -306,6 +306,8 @@ section.project__section {
     position: relative;
 }
 
+
+
 .project__wrapper > .wrapper {
     background: white;
     height: 500px;
@@ -315,23 +317,28 @@ section.project__section {
 
     position: absolute;
     box-shadow: 4px 0 50px var(--shadow-pink);
+    transition: .5s ease-in;
+}
+
+.project__wrapper > .wrapper:hover {
+    transform: scale(1.09);
 }
 
 .project__wrapper > .wrapper.first {
-    top: 0%;
+    top: 20%;
     left: 10%;
     
     z-index: 3;
 }
 
 .project__wrapper > .wrapper.sec {
-    top: 30%;
+    top: 50%;
     left: 43%;
     z-index: 2;
 }
 
 .project__wrapper > .wrapper.third {
-    top: 70%;
+    top: 90%;
     left: 10%;
     z-index: 1;
 }

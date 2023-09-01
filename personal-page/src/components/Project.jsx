@@ -7,6 +7,12 @@ export default function Project() {
 
     return(
         <section className="project__section">
+            <div className="project__header">
+                <h1>My Projects</h1>
+                <p>Here is my portfolio with my personal projects.
+                    Also, I provided the source code and the live preview for each
+                    project.</p>
+            </div>
             <div className="project__wrapper">
                 <div className="wrapper first" 
                 onMouseOver={(e) => upZIndex(e)}
