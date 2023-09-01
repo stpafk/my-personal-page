@@ -3,8 +3,8 @@ import uniqid from 'uniqid'
 
 export default function Project() {
 
-    function upZIndex(e) { e.target.style = "z-index: 3"}
-    function downZIndex(e) {e.target.style = ""}
+    function upZIndex(e) { e.target.classList.add("hovered")};
+    function downZIndex(e) {e.target.classList.remove("hovered")};
 
 
     return(
@@ -17,12 +17,28 @@ export default function Project() {
             </div>
             <div className="project__wrapper">
                 {projects.map((project) => (
-                    <div className="wrapper" id={project.id} key={uniqid()}>
-                        <h1>{project.title}</h1>
-                        <p>{project.description}</p>
-                        <div className="links">
-                            <a href={project.gh_repo}>GitHub Repo</a>
-                            <a href={project.live}>Live Preview</a>
+                    <div className="wrapper" id={project.id} key={uniqid()}
+                    onMouseEnter={(e) => upZIndex(e)}
+                    onMouseLeave={(e) => downZIndex(e)}>
+                        <div className="wrapper__section">
+                            <div className="title">
+                                <h1>{project.title}</h1>
+                            </div>
+                            <p>{project.description}</p>
+                            <div className="links">
+                                <span className="link__icon">
+                                    <a href={project.gh_repo}>
+                                        <i class="bi bi-github"></i>
+                                        <span className="link__text">Code</span>    
+                                    </a>
+                                </span>
+                                <span className="link__icon">
+                                    <a href={project.live}>
+                                        <i class="bi bi-window-fullscreen"></i>
+                                        <span className="link__text">Preview</span>
+                                    </a>
+                                </span>
+                        </div>
                         </div>
                     </div>
                 ))}
