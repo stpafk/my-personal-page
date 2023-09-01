@@ -1,3 +1,5 @@
+import projects from "../helpers/projects"
+import uniqid from 'uniqid'
 
 export default function Project() {
 
@@ -14,15 +16,16 @@ export default function Project() {
                     project.</p>
             </div>
             <div className="project__wrapper">
-                <div className="wrapper first" 
-                onMouseOver={(e) => upZIndex(e)}
-                onMouseLeave={(e) => downZIndex(e)} id="3"></div>
-                <div className="wrapper sec" id="1"
-                onMouseOver={(e) => upZIndex(e)}
-                onMouseLeave={(e) => downZIndex(e)}></div>
-                <div className="wrapper third" id="0"
-                onMouseOver={(e) => upZIndex(e)}
-                onMouseLeave={(e) => downZIndex(e)}></div>
+                {projects.map((project) => (
+                    <div className="wrapper" id={project.id} key={uniqid()}>
+                        <h1>{project.title}</h1>
+                        <p>{project.description}</p>
+                        <div className="links">
+                            <a href={project.gh_repo}>GitHub Repo</a>
+                            <a href={project.live}>Live Preview</a>
+                        </div>
+                    </div>
+                ))}
             </div>
         </section>
     )

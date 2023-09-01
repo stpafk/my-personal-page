@@ -324,20 +324,20 @@ section.project__section {
     transform: scale(1.09);
 }
 
-.project__wrapper > .wrapper.first {
+.project__wrapper > #fir {
     top: 20%;
     left: 10%;
     
     z-index: 3;
 }
 
-.project__wrapper > .wrapper.sec {
+.project__wrapper > #sec {
     top: 50%;
     left: 43%;
     z-index: 2;
 }
 
-.project__wrapper > .wrapper.third {
+.project__wrapper > .wrapper#third {
     top: 90%;
     left: 10%;
     z-index: 1;
