@@ -374,15 +374,21 @@ section.project__section {
 }
 
 .wrapper__section > .links {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    padding: 2%;
     font-size: 22px;
     margin-top: 20%;
     border-top: 2px solid var(--violeta);
 }
 
 .links > .link__icon > a {
-    display: flex;
-    flex-direction: column;
     text-decoration: none;
+}
+
+.links > .link__icon .link__text {
+    padding-left: 5px
 }
 
 @media (max-width:412px) {
