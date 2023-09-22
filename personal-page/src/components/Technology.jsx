@@ -3,11 +3,10 @@ import techs from "../helpers/tech"
 
 export default function Technology() {
 
-    function throwPopUp(e) {
+    /*function throwPopUp(e) {
         let filteredTech = techs.filter((t) => t.name === e.target.id);
 
-    }
-
+    }*/
     return(
         <>
             <section className="technology__section" id="technology">

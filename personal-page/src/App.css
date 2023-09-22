@@ -91,7 +91,7 @@ ul.sidebar li a .txt-click {
 }
 
 section.landing__page {
-    min-height: 100vh;
+    min-height: 100%;
     margin-left: 10%;    
 }
 
@@ -223,7 +223,7 @@ article > img {
 }
 
 section.technology__section {
-    min-height: 100vh;
+    min-height: 100%;
     margin: 10% 0 10% 10%;
 }
 
@@ -424,7 +424,7 @@ section.project__section {
 @media (max-width:412px) {
 
     section.landing__page {
-        min-height: 80vh;
+        min-height: 80%;
     }
 
     section > .redCrossBar {

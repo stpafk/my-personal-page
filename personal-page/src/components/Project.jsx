@@ -3,9 +3,8 @@ import uniqid from 'uniqid'
 
 export default function Project() {
 
-    function upZIndex(e) { e.target.classList.add("hovered")};
-    function downZIndex(e) {e.target.classList.remove("hovered")};
-
+    function upZIndex(e) { e.target.classList.add("hovered")}
+    function downZIndex(e) {e.target.classList.remove("hovered")}
 
     return(
         <section className="project__section" id="projects">
@@ -28,13 +27,13 @@ export default function Project() {
                             <div className="links">
                                 <span className="link__icon">
                                     <a href={project.gh_repo}>
-                                        <i class="bi bi-github"></i>
+                                        <i className="bi bi-github"></i>
                                         <span className="link__text">Code</span>    
                                     </a>
                                 </span>
                                 <span className="link__icon">
                                     <a href={project.live}>
-                                        <i class="bi bi-window-fullscreen"></i>
+                                        <i className="bi bi-window-fullscreen"></i>
                                         <span className="link__text">Preview</span>
                                     </a>
                                 </span>
