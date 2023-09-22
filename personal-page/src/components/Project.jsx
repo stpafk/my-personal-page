@@ -8,7 +8,7 @@ export default function Project() {
 
 
     return(
-        <section className="project__section">
+        <section className="project__section" id="projects">
             <div className="project__header">
                 <h1>My Projects</h1>
                 <p>Here is my portfolio with my personal projects.

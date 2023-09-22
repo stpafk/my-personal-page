@@ -1,9 +1,8 @@
+import { useEffect } from "react";
 
 export default function Sidebar() {
 
     function toggleSidebar(e) {
-
-
         if (e.target.id === "") {
             e.target.id = "clicked";
             document.querySelector("nav").id = "clicked";
@@ -12,8 +11,18 @@ export default function Sidebar() {
 
         e.target.id = "";
         document.querySelector("nav").id = ""
-
     }
+
+    useEffect(() => {
+        document.querySelectorAll('a[href^="#"').forEach(anchor => {
+            anchor.addEventListener("click", function(e){
+                e.preventDefault();
+                document.querySelector(this.getAttribute("href")).scrollIntoView({
+                    behavior: "smooth"
+                })
+            })
+        })
+    })
 
     return(
         <nav>
@@ -23,25 +32,25 @@ export default function Sidebar() {
             </div>
             <ul className="sidebar">
                 <li className="sidebar__li">
-                    <a href="#">
+                    <a href="#home">
                         <span className="icon"><i className="bi bi-house"></i></span>
                         <span className="txt-click">Home</span>
                     </a>
                 </li>
                 <li className="sidebar__li">
-                    <a href="#">
+                    <a href="#technology">
                         <span className="icon"><i className="bi bi-braces"></i></span>
                         <span className="txt-click">Technology</span>
                     </a>
                 </li>
                 <li className="sidebar__li">
-                    <a href="#">
+                    <a href="#projects">
                         <span className="icon"><i className="bi bi-lightbulb"></i></span>
                         <span className="txt-click">Projects</span>
                     </a>
                 </li>
                 <li className="sidebar__li">
-                    <a href="#">
+                    <a href="#contact">
                         <span className="icon"><i className="bi bi-file-person"></i></span>
                         <span className="txt-click">Contact</span>
                     </a>

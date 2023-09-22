@@ -3,7 +3,7 @@ import img from '../assets/S.jpg'
 export default function Landing() {
 
     return(
-        <section className="landing__page">
+        <section className="landing__page" id="home">
             <div className="redCrossBar"></div>
             <div className="redCrossBar second"></div>
             <div className="redCrossBar third"></div>

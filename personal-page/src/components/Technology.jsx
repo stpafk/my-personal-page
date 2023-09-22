@@ -10,7 +10,7 @@ export default function Technology() {
 
     return(
         <>
-            <section className="technology__section">
+            <section className="technology__section" id="technology">
                     <div className="tech__header">
                         <h1>Technologies</h1>
                         <h3>Here are the technologies which I have some experience on.</h3>
