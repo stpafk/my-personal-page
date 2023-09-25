@@ -302,13 +302,28 @@ li.grid_tech > p {
 
 section.project__section {
     min-height: 100vh;
-    margin: 10% 0 10% 10%;
+    margin: 0 0 10% 10%;
     display: flex;
     justify-content: center;
     position: relative;
 }
 
+section.project__section > .project__header {
+    max-height: 20vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
 
+.project__header > h1 {
+    font-size: 48px;
+}
+
+.project__header > p {
+    font-size: 16px;
+    padding-top: 20px;
+    font-style: italic;
+}
 
 .project__wrapper > .wrapper {
     background: white;
