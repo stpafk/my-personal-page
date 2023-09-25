@@ -13,7 +13,7 @@ const projects = [
         id: "sec",
         type: "front",
         title: "Weather App",
-        description: "Weather App that uses OpenWeather API to give out the current weather for a certain location. Built with pure JS.",
+        description: "Weather App that uses OpenWeather API to give out the current weather for a certain location. Initially written in pure JS, now written in React.",
         gh_repo: "https://github.com/stpafk/weather-app",
         live: "https://stpafk.github.io/weather-app/",
     },
