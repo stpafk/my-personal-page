@@ -406,6 +406,14 @@ section.project__section > .project__header {
     padding-left: 5px
 }
 
+section.contact__section {
+    min-height: 100vh;
+    margin-top: 40%;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
 @media (max-width:412px) {
     
     nav {

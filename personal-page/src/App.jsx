@@ -3,6 +3,7 @@ import Landing from './components/Landing';
 import Sidebar from './components/Sidebar';
 import Technology from './components/Technology';
 import Project from './components/Project';
+import Contact from './components/Contact';
 
 function App() {
 
@@ -12,9 +13,10 @@ function App() {
       <Landing />
       <Technology />
       <Project />
+      <Contact />
     </>
   )
 
 }
 
-export default App
+export default App;
