@@ -527,3 +527,39 @@ section.project__section > .project__header {
     }
 
 }
+
+@media (max-width: 412px) {
+    .project__header > h1 {
+        font-size: 32px;
+    }
+    .project__header > p {
+        font-size: 14px;
+        padding: 5% 15%;
+    }
+
+    .project__wrapper > .wrapper {
+        width: 300px;
+        height: 300px;
+    }
+    .project__wrapper > #fir {
+        top: 15%;
+        left: 0%;
+    }
+    .project__wrapper > #sec {
+        top: 50%;
+        left: 0%;
+    }
+    .project__wrapper > .wrapper#third {
+        left: 0%;
+        top: 85%;
+    }
+    .wrapper__section > .title > h1 {
+        font-size: 28px;
+    }
+    .wrapper__section > p {
+        font-size: 14px;
+    }
+    .wrapper__section > .links {
+        margin-top: 5%;
+    }
+}
