@@ -414,6 +414,29 @@ section.contact__section {
     position: relative;
 }
 
+section.contact__section > .contact__header > h1 {
+    font-size: 48px;
+    text-align: center;
+}
+
+.contact__header > p {
+    font-size: 24px;
+    text-align: center;
+}
+
+.contact__links > ul {
+    display: flex;
+    flex-direction: row;
+}
+
+.grid__contact > img {
+    height: 50px;
+    width: 50px;
+}
+
+#email, #github {
+    filter: invert(97%) sepia(74%) saturate(201%) hue-rotate(314deg) brightness(117%) contrast(100%);}
+
 @media (max-width:412px) {
     
     nav {
