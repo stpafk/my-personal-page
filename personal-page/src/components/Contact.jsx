@@ -12,12 +12,15 @@ export default function Contact() {
                 <ul>
                     <li className="grid__contact">
                         <img id="linkedin" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg" alt='LinkedIn' />
+                        <a href="https://www.linkedin.com/in/stephan-allek-weigert-53801619b/">LinkedIn</a>
                     </li>
                     <li className="grid__contact">
                         <img id="github" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt='Github' />
+                        <a href="https://github.com/stpafk">Github</a>
                     </li>
                     <li className="grid__contact">
                         <img id="email" src={Email} alt="Email" />
+                        <p>stephan.weigert@hotmail.com</p>
                     </li>
                 </ul>
             </div>

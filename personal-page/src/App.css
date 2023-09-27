@@ -409,7 +409,6 @@ section.project__section > .project__header {
 section.contact__section {
     min-height: 100vh;
     margin-top: 40%;
-    display: flex;
     justify-content: center;
     position: relative;
 }
@@ -424,14 +423,27 @@ section.contact__section > .contact__header > h1 {
     text-align: center;
 }
 
+.contact__links {
+    margin: 10% 25%;
+}
+
 .contact__links > ul {
     display: flex;
     flex-direction: row;
+    list-style-type: none;
+}
+
+.grid__contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0 5%;
 }
 
 .grid__contact > img {
-    height: 50px;
-    width: 50px;
+    height: 150px;
+    width: 150px;
 }
 
 #email, #github {
