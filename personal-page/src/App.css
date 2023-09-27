@@ -441,6 +441,11 @@ section.contact__section > .contact__header > h1 {
     padding: 0 5%;
 }
 
+.grid__contact > a {
+    color: #fff;
+    padding: 5% 0;
+}
+
 .grid__contact > img {
     height: 150px;
     width: 150px;
@@ -605,4 +610,25 @@ section.contact__section > .contact__header > h1 {
     .wrapper__section > .links {
         margin-top: 15%;
     }
+}
+
+@media (max-width:412px) {
+    section.contact__section {
+        margin-top: 60%;
+    }
+    section.contact__section > .contact__header > h1 {
+        font-size: 32px;
+    }
+    .contact__header > p {
+        padding: 5% 10%;
+        font-size: 16px;
+    }
+    .contact__links > ul {
+        flex-direction: column;
+    }
+    .grid__contact > img {
+        height: 50px;
+        width: 50px;
+    }
+
 }
