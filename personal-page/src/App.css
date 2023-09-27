@@ -534,7 +534,7 @@ section.project__section > .project__header {
     }
     .project__header > p {
         font-size: 14px;
-        padding: 5% 15%;
+        padding: 5% 10%;
     }
 
     .project__wrapper > .wrapper {
@@ -560,6 +560,6 @@ section.project__section > .project__header {
         font-size: 14px;
     }
     .wrapper__section > .links {
-        margin-top: 5%;
+        margin-top: 15%;
     }
 }
