@@ -28,7 +28,7 @@ export default function Landing() {
                     </p>
 
                     <label htmlFor="checkout__contact">Want to contact me?</label>
-                    <input type="button" value="Contact" />
+                    <input type="button" value="Contact" onClick={() => document.querySelector('.contact__section').scrollIntoView({behavior: 'smooth'})}/>
 
                     
                 </div>
